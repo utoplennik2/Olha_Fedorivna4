@@ -1,0 +1,12 @@
+{
+  "name": "lecturer-profile",
+  "version": "1.0.0",
+  "description": "Візитівка викладача з API",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
