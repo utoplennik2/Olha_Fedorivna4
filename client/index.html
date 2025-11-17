@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Булгакова Ольга Федорівна</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- dom-tour.js подключается только если в URL есть ?tour -->
+    <script>
+        if (location.search.includes('tour')) {
+            const script = document.createElement('script');
+            script.src = 'dom-tour.js';
+            script.onload = () => console.log('DOM-тур активовано');
+            document.head.appendChild(script);
+        }
+    </script>
+</head>
+<body>
+    <div class="header">
+        <a href="#" class="pseudo-button">НАЗАД</a>
+        <a href="#" class="pseudo-button">ГОЛОВНА</a>
+        <a href="https://scholar.google.com.ua/citations?user=HyJWkhUAAAAJ&hl=ru" class="pseudo-button">Google Scholar</a>
+        <a href="#" class="pseudo-button">Сертифікати</a>
+    </div>
+
+    <div class="container">
+        <div class="profile-section">
+            <div class="profile-img"></div>
+            <div class="name" id="fullName">Завантаження...</div>
+            <div class="description" id="description"></div>
+            <div class="email" id="contacts"></div>
+        </div>
+
+        <div class="content-section">
+            <div class="section">
+                <h3>Освіта (дисципліни, які викладає)</h3>
+                <ul id="educationList"><li>Завантаження...</li></ul>
+            </div>
+
+            <div class="section">
+                <h3>Досвід роботи та досягнення</h3>
+                <ul id="experienceList"><li>Завантаження...</li></ul>
+            </div>
+        </div>
+    </div>
+
+    <footer class="author">
+        Автор проєкту: Маценко Маша
+    </footer>
+
+    <script src="controller.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            Controller.init();
+        });
+    </script>
+</body>
+</html>
